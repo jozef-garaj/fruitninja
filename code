@@ -1,0 +1,19 @@
+function cutFruits(fruits) {
+  var maxx = fruits.length;
+  var i = 0;
+  var zoznam = [];
+  for (i; i < maxx; i++) {
+    var halflenght = fruits[i].length / 2;
+    var ceile = Math.ceil(halflenght);
+    // console.log(ceile);
+
+    //console.log(fruits[i]);
+    var toto = fruits[i];
+    var polslova = toto.slice(0, ceile);
+
+    var druha = toto.slice(ceile);
+    zoznam += polslova + ", " + druha + ", ";
+  }
+  console.log(zoznam);
+}
+cutFruits(fruitsName);
